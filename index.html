@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/index-styles.css">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <figure>
+                <img src="/images/logo.svg" alt="logo">
+            </figure>
+            <nav class="main">
+                <ul>
+                    <li>
+                        <a href="#">Como trabajamos</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">Cuenta</a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn-navbar">Ver planes</a>
+                    </li>
+                </ul>
+                <img src="/images/bg-pattern-mobile-nav.svg" class="pattern-nav-mobile" alt="pattern nav">
+            </nav>
+            <a class="burgerBtn" href="#"  onclick="toggleMenu();"></a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img class="pattern" src="/images/bg-pattern-intro-right-desktop.svg" alt="pattern image">
+            <img class="pattern-hero-top-mobile" src="/images/bg-pattern-intro-left-mobile.svg" alt="pattern image">
+            <div class="wrapper">
+                <div class="texto">
+                    <h1>Humanizando <br> tu seguro.</h1>
+                    <p>
+                        Obten la cobertura de tu seguro social facil y rapidamente. Nosotros mezclamos nuesta experiencia con la tecnólogia para ayudarte a encontrar el plan correcto para ti. Asegurate y amarás la protección.
+                    </p> 
+                    <a href="#">ver planes</a>
+                </div>
+                <div class="imagen">
+                    <img src="/images/image-intro-desktop.jpg" alt="Imagen background">
+                </div>
+            </div>
+            <img class="pattern-hero-bottom-mobile" src="/images/bg-pattern-intro-right-mobile.svg" alt="pattern image">
+        </section> 
+        <img class="pattern-left" src="/images/bg-pattern-intro-left-desktop.svg" alt="pattern image left">
+        <section class="information">
+            <div class="wrapper">
+                <h2>Nosotros somos diferentes</h2>
+                <div class="features">
+                    <article>
+                        <figure class="detail-img">
+                            <img src="/images/icon-snappy-process.svg" alt="snappy icon">
+                        </figure>
+                        <div class="detail">
+                            <h4>Procesos rápidos</h4>
+                            <p>
+                                La aplicación de nuestros procesos puede ser completada en minutos, no horas.
+                                No te estreses llenando tediosos formularios.
+                            </p>
+                        </div>
+                    </article>
+                    <article>
+                        <figure class="detail-img">
+                            <img src="/images/icon-affordable-prices.svg" alt="affordable icon">
+                        </figure>
+                        <div class="detail">
+                            <h4>Precios asequibles</h4>
+                            <p>
+                                Nosotros no queremos que estes preocupado por un alto costo mensual.
+                                Nuestros precios pueden ser bajos pero siguen ofreciendo la mejor cobertura posible.
+                            </p>
+                        </div>
+                    </article>
+                    <article>
+                        <figure class="detail-img">
+                            <img src="/images/icon-people-first.svg" alt="people first icon">
+                        </figure>
+                        <div class="detail">
+                            <h4>Tu eres prioridad</h4>
+                            <p>
+                                Nuestros planes no estan llenos de condiciones y clausulas para evitar pagos. Nosotros nos aseguramos que tu estes protegido cuando lo necesites.
+                            </p>
+                        </div>
+                    </article> 
+                </div>
+                <div class="banner">
+                    <h2>Descubre más acerca de como trabajamos</h2>
+                    <a href="#">Como trabajamos</a>
+                    <img class="pattern-banner-dektop" src="/images/bg-pattern-how-we-work-desktop.svg">
+                    <img class="pattern-banner-mobile" src="/images/bg-pattern-how-we-work-mobile.svg">
+                </div>
+            </div>
+        </section>
+    </main> 
+
+    <footer>
+        <img class="pattern" src="/images/bg-pattern-footer-desktop.svg" alt="pattern image">
+        <img class="pattern-mobile" src="/images/bg-pattern-footer-mobile.svg" alt="pattern image">
+        <div class="wrapper">
+            <div class="nav-footer">
+                <figure>
+                    <img src="/images/logo.svg" alt="logo">
+                </figure>
+                <div class="social-media">
+                    <a class="icon-facebook" href=""></a>
+                    <a class="icon-twitter" href=""></a>
+                    <a class="icon-pinterest" href=""></a>
+                    <a class="icon-instagram" href=""></a>
+                </div>
+            </div>
+            <div class="grid-container">
+                <a href="#" class="head">Nuesta compañia</a>
+                <a href="#" class="head">Ayuda</a>
+                <a href="#" class="head">Contacto</a>
+                <a href="#" class="head">Otros</a>
+                <a href="#" class="body">Como trabajamos</a>
+                <a href="#" class="body">FAQ</a>
+                <a href="#" class="body">Ventas</a>
+                <a href="#" class="body">Carreras</a>
+                <a href="#" class="body">¿Porqué asegurarte?</a>
+                <a href="#" class="body">Terminos de uso</a>
+                <a href="#" class="body">Soporte</a>
+                <a href="#" class="body">Prensa</a>
+                <a href="#" class="body">Ver planes</a>
+                <a href="#" class="body">Politicas de privacidad</a>
+                <a href="#" class="body">Chat en vivo</a>
+                <a href="#" class="body">Licencias</a>
+                <a href="#" class="body">Reviews</a>
+                <a href="#" class="body">Cookies</a>
+            </div>
+        </div>
+    </footer> 
+
+    <script>
+        function toggleMenu() {
+            var burgerButton = document.querySelector('.burgerBtn');
+            var mainSection = document.querySelector('.main');
+            burgerButton.classList.toggle('active');
+            mainSection.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
